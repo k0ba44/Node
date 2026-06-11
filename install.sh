@@ -3,6 +3,9 @@
 # Остановка скрипта при ошибке
 set -e
 
+echo "=== Запуск bench.sh ==="
+wget -qO- bench.sh | bash
+
 echo "=== Обновление системы ==="
 apt update && apt upgrade -y
 
