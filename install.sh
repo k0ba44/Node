@@ -3,9 +3,6 @@
 # Остановка скрипта при ошибке
 set -e
 
-echo "=== Обновление системы ==="
-apt update && apt upgrade -y
-
 echo "=== Установка Docker ==="
 curl -fsSL https://get.docker.com | sh
 
